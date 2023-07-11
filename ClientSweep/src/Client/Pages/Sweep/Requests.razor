@@ -1,0 +1,41 @@
+﻿@page "/sweep/requests"
+@*@attribute [MustHavePermission(FSHAction.View, FSHResource.Brands)]*@
+
+@inject IStringLocalizer<Requests> L
+@inject IRequestsClient RequestsClient
+
+<FshTitle Title="Requests" Description="Manage Requests." />
+
+<EntityTable TEntity="RequestDto" TId="Guid" TRequest="UpdateRequestRequest" Context="@Context">
+    <EditFormContent>
+        <MudItem xs="12" md="6">
+            <MudTextField T="string" For="@(() => context.Name)" @bind-Value="context.Name" Label="@L["Name"]" />
+        </MudItem>
+    </EditFormContent>
+</EntityTable>
+
+<MudText Align="Align.Center" Typo="Typo.h5" Class="smaller">hello world</MudText>
+
+@code
+{
+    protected EntityServerTableContext<RequestDto, Guid, UpdateRequestRequest> Context { get; set; } = default!;
+
+    protected override void OnInitialized() =>
+        Context = new(
+            entityName: "Request",
+            entityNamePlural: "Requests",
+            entityResource: FSHResource.Requests,
+            fields: new()
+            {
+                new(request => request.Id, L["Id"], "Id"),
+                new(request => request.Name, L["Name"], "Name"),
+            },
+            idFunc: request => request.Id,
+            searchFunc: async filter => (await RequestsClient
+                .SearchAsync(filter.Adapt<SearchRequestsRequest>()))
+                .Adapt<PaginationResponse<RequestDto>>(),
+            createFunc: async request => await RequestsClient.CreateAsync(request.Adapt<CreateRequestRequest>()),
+            //updateFunc: async (id, brand) => await BrandsClient.UpdateAsync(id, brand),
+            //deleteFunc: async id => await BrandsClient.DeleteAsync(id),
+            exportAction: string.Empty);
+}

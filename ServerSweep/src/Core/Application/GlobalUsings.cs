@@ -1,0 +1,17 @@
+global using Ardalis.Specification;
+global using FluentValidation;
+global using ServerSweep.Application.Common.Events;
+global using ServerSweep.Application.Common.Exceptions;
+global using ServerSweep.Application.Common.FileStorage;
+global using ServerSweep.Application.Common.Interfaces;
+global using ServerSweep.Application.Common.Models;
+global using ServerSweep.Application.Common.Persistence;
+global using ServerSweep.Application.Common.Specification;
+global using ServerSweep.Application.Common.Validation;
+global using ServerSweep.Domain.Catalog;
+global using ServerSweep.Domain.Common;
+global using ServerSweep.Domain.Common.Contracts;
+global using ServerSweep.Shared.Notifications;
+global using MediatR;
+global using Microsoft.Extensions.Localization;
+global using Microsoft.Extensions.Logging;

@@ -1,0 +1,41 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.DependencyInjection
+@using Microsoft.Extensions.Localization
+@using Microsoft.JSInterop
+@using ClientSweep.Client
+@using ClientSweep.Client.Shared
+@using ClientSweep.Client.Pages.Authentication
+@using ClientSweep.Client.Pages.Multitenancy
+@using ClientSweep.Client.Components.Common
+@using ClientSweep.Client.Components.EntityTable
+@using ClientSweep.Client.Components.Localization
+@using ClientSweep.Client.Components.Notifications
+@using ClientSweep.Client.Components.ThemeManager
+@using ClientSweep.Client.Infrastructure.ApiClient
+@using ClientSweep.Client.Infrastructure.Auth
+@using ClientSweep.Client.Infrastructure.Common
+@using ClientSweep.Client.Infrastructure.Notifications
+@using ClientSweep.Client.Infrastructure.Preferences
+@using FSH.WebApi.Shared.Authorization
+@using Blazored.LocalStorage
+@using Mapster
+@using MediatR.Courier
+@using MudBlazor
+
+@attribute [Authorize]
+
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IConfiguration Config
+@inject IClientPreferenceManager ClientPreferences
