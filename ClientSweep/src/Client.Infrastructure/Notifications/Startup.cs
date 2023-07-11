@@ -1,4 +1,4 @@
-﻿using FSH.WebApi.Shared.Notifications;
+﻿using ServerSweep.Shared.Notifications;
 using MediatR;
 using MediatR.Courier;
 using MediatR.Courier.DependencyInjection;

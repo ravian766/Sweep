@@ -1,4 +1,4 @@
-﻿using FSH.WebApi.Shared.Notifications;
+﻿using ServerSweep.Shared.Notifications;
 
 namespace ClientSweep.Client.Infrastructure.Notifications;
 

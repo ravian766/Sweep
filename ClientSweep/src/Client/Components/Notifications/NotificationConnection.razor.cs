@@ -5,7 +5,7 @@ using System.Text.Json.Nodes;
 using ClientSweep.Client.Infrastructure.Auth;
 using ClientSweep.Client.Infrastructure.Common;
 using ClientSweep.Client.Infrastructure.Notifications;
-using FSH.WebApi.Shared.Notifications;
+using ServerSweep.Shared.Notifications;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.SignalR.Client;

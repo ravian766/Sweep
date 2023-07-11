@@ -1,7 +1,7 @@
 ﻿using ClientSweep.Client.Components.EntityTable;
 using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Common;
-using FSH.WebApi.Shared.Authorization;
+using ServerSweep.Shared.Authorization;
 using Mapster;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;

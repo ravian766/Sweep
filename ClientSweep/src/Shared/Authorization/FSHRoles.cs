@@ -1,11 +1,11 @@
 using System.Collections.ObjectModel;
 
-namespace FSH.WebApi.Shared.Authorization;
+namespace ServerSweep.Shared.Authorization;
 
 public static class FSHRoles
 {
-    public static string Admin = nameof(Admin);
-    public static string Basic = nameof(Basic);
+    public const string Admin = nameof(Admin);
+    public const string Basic = nameof(Basic);
 
     public static IReadOnlyList<string> DefaultRoles { get; } = new ReadOnlyCollection<string>(new[]
     {

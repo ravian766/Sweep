@@ -1,6 +1,6 @@
 ﻿using ClientSweep.Client.Infrastructure.Auth;
 using ClientSweep.Client.Infrastructure.Common;
-using FSH.WebApi.Shared.Authorization;
+using ServerSweep.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;

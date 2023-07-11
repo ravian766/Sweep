@@ -2,7 +2,7 @@
 using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Auth;
 using ClientSweep.Client.Shared;
-using FSH.WebApi.Shared.Multitenancy;
+using ServerSweep.Shared.Multitenancy;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor;

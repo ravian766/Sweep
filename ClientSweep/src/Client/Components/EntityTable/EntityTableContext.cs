@@ -1,4 +1,4 @@
-﻿using FSH.WebApi.Shared.Authorization;
+﻿using ServerSweep.Shared.Authorization;
 using MudBlazor;
 
 namespace ClientSweep.Client.Components.EntityTable;

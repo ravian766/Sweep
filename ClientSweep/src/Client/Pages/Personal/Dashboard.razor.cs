@@ -1,7 +1,7 @@
 ﻿using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Notifications;
 using ClientSweep.Client.Shared;
-using FSH.WebApi.Shared.Notifications;
+using ServerSweep.Shared.Notifications;
 using MediatR.Courier;
 using Microsoft.AspNetCore.Components;
 

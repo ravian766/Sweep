@@ -1,7 +1,7 @@
 ﻿using ClientSweep.Client.Components.EntityTable;
 using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Auth;
-using FSH.WebApi.Shared.Authorization;
+using ServerSweep.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;

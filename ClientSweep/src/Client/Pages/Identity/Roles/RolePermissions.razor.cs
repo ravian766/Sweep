@@ -2,8 +2,8 @@
 using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Auth;
 using ClientSweep.Client.Shared;
-using FSH.WebApi.Shared.Authorization;
-using FSH.WebApi.Shared.Multitenancy;
+using ServerSweep.Shared.Authorization;
+using ServerSweep.Shared.Multitenancy;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;

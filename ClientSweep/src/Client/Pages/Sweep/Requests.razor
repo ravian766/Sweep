@@ -4,7 +4,8 @@
 @inject IStringLocalizer<Requests> L
 @inject IRequestsClient RequestsClient
 
-<FshTitle Title="Requests" Description="Manage Requests." />
+@*<FshTitle Title="Requests" Description="Manage Requests." />*@
+<FshTitle Title="@L["Requests"]" Description="@L["Manage Requests."]" />
 
 <EntityTable TEntity="RequestDto" TId="Guid" TRequest="UpdateRequestRequest" Context="@Context">
     <EditFormContent>
@@ -22,9 +23,9 @@
 
     protected override void OnInitialized() =>
         Context = new(
-            entityName: "Request",
-            entityNamePlural: "Requests",
-            entityResource: FSHResource.Requests,
+            entityName: L["Requests"],
+            entityNamePlural: L["Requests"],
+            entityResource: FSHResource.Brands,
             fields: new()
             {
                 new(request => request.Id, L["Id"], "Id"),

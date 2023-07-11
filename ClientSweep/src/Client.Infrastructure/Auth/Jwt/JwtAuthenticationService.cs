@@ -1,5 +1,5 @@
 ﻿using ClientSweep.Client.Infrastructure.ApiClient;
-using FSH.WebApi.Shared.Authorization;
+using ServerSweep.Shared.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 

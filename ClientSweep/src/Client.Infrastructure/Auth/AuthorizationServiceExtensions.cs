@@ -1,4 +1,4 @@
-﻿using FSH.WebApi.Shared.Authorization;
+﻿using ServerSweep.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 
 namespace ClientSweep.Client.Infrastructure.Auth;

@@ -1,4 +1,4 @@
-﻿namespace FSH.WebApi.Shared.Notifications;
+﻿namespace ServerSweep.Shared.Notifications;
 
 public class BasicNotification : INotificationMessage
 {

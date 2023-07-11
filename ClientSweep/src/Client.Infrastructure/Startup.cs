@@ -3,7 +3,7 @@ using ClientSweep.Client.Infrastructure.ApiClient;
 using ClientSweep.Client.Infrastructure.Auth;
 using ClientSweep.Client.Infrastructure.Notifications;
 using ClientSweep.Client.Infrastructure.Preferences;
-using FSH.WebApi.Shared.Authorization;
+using ServerSweep.Shared.Authorization;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.DependencyInjection;
 using MudBlazor;
